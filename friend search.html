@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>여행친구찾기</title>
+<style>
+    * {padding: 0; margin: 0;}
+    h3 {padding-left: 10px;
+        border-left: solid 10px skyblue;
+        margin: 15px 10px 15px 450px;}
+    ul {width: 600px;
+        border: solid 2px black;
+        padding: 10px 15px 10px 15px;
+        margin: 10px;
+        margin-left: 450px;}
+    li {list-style: none;
+        padding: 10px 15px 10px 15px;
+        border-bottom: dotted 1px black;
+        margin: 10px;
+        text-align: center;}
+    span {font-weight: bold;}
+.button {display: inline-block;
+         padding: 15px 25px;
+         font-size: 24px;
+         cursor: pointer;
+         text-align: center;
+         text-decoration: none;
+         outline: none;
+         color: #fff;
+         background-color: skyblue;
+         border: none;
+         border-radius: 15px;}
+.button:hover {background-color: lightpink}
+.button:active {background-color: #3e8e41;}\
+</style>
+</head>
+<body>
+    <h3> 여행성격검사 </h3>
+    <form action="submit.html">
+    <ul>
+        <li> <span>나는 호기심이 많은 편이다.</span> <br> <br>
+            <input type="radio" name="what0"> 전혀 그렇지 않다.
+            <input type="radio" name="what0"> 그렇지 않다.
+            <input type="radio" name="what0"> 보통이다.
+            <input type="radio" name="what0"> 그렇다.
+            <input type="radio" name="what0"> 매우 그렇다.
+        </li>
+        <li> <span>나는 평소 활동적인 편이다.</span> <br> <br>
+            <input type="radio" name="what1"> 전혀 그렇지 않다.
+            <input type="radio" name="what1"> 그렇지 않다.
+            <input type="radio" name="what1"> 보통이다.
+            <input type="radio" name="what1"> 그렇다.
+            <input type="radio" name="what1"> 매우 그렇다.
+        </li>
+        <li> <span>나는 평소 주장을 굽히지 않은 편이다.</span> <br> <br>
+            <input type="radio" name="what2"> 전혀 그렇지 않다.
+            <input type="radio" name="what2"> 그렇지 않다.
+            <input type="radio" name="what2"> 보통이다.
+            <input type="radio" name="what2"> 그렇다.
+            <input type="radio" name="what2"> 매우 그렇다.
+        </li>
+        <li> <span>나는 평소 상상하는 시간이 많은 편이다.</span> <br> <br>
+            <input type="radio" name="what3"> 전혀 그렇지 않다.
+            <input type="radio" name="what3"> 그렇지 않다.
+            <input type="radio" name="what3"> 보통이다.
+            <input type="radio" name="what3"> 그렇다.
+            <input type="radio" name="what3"> 매우 그렇다.
+        </li>
+        <li> <span>나는 평소 사교적인 편이다.</span> <br> <br>
+            <input type="radio" name="what4"> 전혀 그렇지 않다.
+            <input type="radio" name="what4"> 그렇지 않다.
+            <input type="radio" name="what4"> 보통이다.
+            <input type="radio" name="what4"> 그렇다.
+            <input type="radio" name="what4"> 매우 그렇다.
+        </li>
+        <li> <span>나는 창의적이라는 이야기를 자주 듣는 편이다.</span> <br> <br>
+            <input type="radio" name="what5"> 전혀 그렇지 않다.
+            <input type="radio" name="what5"> 그렇지 않다.
+            <input type="radio" name="what5"> 보통이다.
+            <input type="radio" name="what5"> 그렇다.
+            <input type="radio" name="what5"> 매우 그렇다.
+        </li>
+        <li> <span>나는 사색을 자주한다.</span> <br> <br>
+            <input type="radio" name="what6"> 전혀 그렇지 않다.
+            <input type="radio" name="what6"> 그렇지 않다.
+            <input type="radio" name="what6"> 보통이다.
+            <input type="radio" name="what6"> 그렇다.
+            <input type="radio" name="what6"> 매우 그렇다.
+        </li>
+        <li> <span>나는 반복적인 일을 싫어한다.</span> <br> <br>
+            <input type="radio" name="what7"> 전혀 그렇지 않다.
+            <input type="radio" name="what7"> 그렇지 않다.
+            <input type="radio" name="what7"> 보통이다.
+            <input type="radio" name="what7"> 그렇다.
+            <input type="radio" name="what7"> 매우 그렇다.
+        </li>
+        <li> <span>나는 미적 감각이 탁월하다.</span> <br> <br>
+            <input type="radio" name="what8"> 전혀 그렇지 않다.
+            <input type="radio" name="what8"> 그렇지 않다.
+            <input type="radio" name="what8"> 보통이다.
+            <input type="radio" name="what8"> 그렇다.
+            <input type="radio" name="what8"> 매우 그렇다.
+        </li>
+        <li> <span>나는 모험적인 것을 즐기는 편이다.</span> <br> <br>
+            <input type="radio" name="what9"> 전혀 그렇지 않다.
+            <input type="radio" name="what9"> 그렇지 않다.
+            <input type="radio" name="what9"> 보통이다.
+            <input type="radio" name="what9"> 그렇다.
+            <input type="radio" name="what9"> 매우 그렇다.
+        </li>
+        <li> <span>나는 먼저 나서길 좋아하는 편이다.</span> <br> <br>
+            <input type="radio" name="what10"> 전혀 그렇지 않다.
+            <input type="radio" name="what10"> 그렇지 않다.
+            <input type="radio" name="what10"> 보통이다.
+            <input type="radio" name="what10"> 그렇다.
+            <input type="radio" name="what10"> 매우 그렇다.
+        </li>
+        <li> <span>나는 듣기보다 말하는 편이다.</span> <br> <br>
+            <input type="radio" name="what11"> 전혀 그렇지 않다.
+            <input type="radio" name="what11"> 그렇지 않다.
+            <input type="radio" name="what11"> 보통이다.
+            <input type="radio" name="what11"> 그렇다.
+            <input type="radio" name="what11"> 매우 그렇다.
+        </li>
+        <li>
+            <button type="submit" class="button">제출하기</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
